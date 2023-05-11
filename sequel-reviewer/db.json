@@ -1,0 +1,37 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "title": "Top Gun Maverick",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/13/Top_Gun_Maverick_Poster.jpg",
+      "synopsis": "After more than 30 years of service as one of the Navy's top aviators, Pete \"Maverick\" Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him. Training a detachment of graduates for a special assignment, Maverick must confront the ghosts of his past and his deepest fears, culminating in a mission that demands the ultimate sacrifice from those who choose to fly it.",
+      "review": "Great sequel, worth watching, action packed and a surprise in every way",
+      "score": 4
+    },
+    {
+      "id": 2,
+      "title": "Glass Onion",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Glass_Onion_poster.jpg",
+      "synopsis": "Tech billionaire Miles Bron invites his friends for a getaway on his private Greek island. When someone turns up dead, Detective Benoit Blanc is put on the case.",
+      "review": "If you liked the first one you will like this one. The first one is better in my opinion.",
+      "score": 3
+    },
+    {
+      "id": 3,
+      "title": "Avatar: The Way of Water",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Avatar_The_Way_of_Water_poster.jpg",
+      "synopsis": "Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.",
+      "review": "Awesome effects, better plot, and there isn't a new bad guy.",
+      "score": 3
+    },
+    {
+      "title": "Paddington 2",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b6/Paddington_2_poster.jpg",
+      "synopsis": "Settled in with the Brown family, Paddington the bear is a popular member of the community who spreads joy and marmalade wherever he goes. One fine day, he spots a pop-up book in an antique shop -- the perfect present for his beloved aunt's 100th birthday. When a thief steals the prized book, Paddington embarks on an epic quest to unmask the culprit before Aunt Lucy's big celebration.",
+      "review": "This movie restored my faith in sequels most I thought were cash grabs but this one was possibly better than the first if that was possible.",
+      "score": "5",
+      "id": 4
+    },
+
+  ]
+}
