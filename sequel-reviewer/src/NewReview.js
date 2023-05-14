@@ -8,9 +8,17 @@ function NewReview({ onAddReview }) {
         image:"", 
         synopsis: "", 
         review: "", 
-        score: ""
+        score: 0
     })
+    console.log(newReviewObj)
     const history = useHistory();
+
+    function handleChange(e) {
+        setReviewObj({
+            ...newReviewObj,
+            [e.target.name]: e.target.value
+        })
+    }
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -41,25 +49,25 @@ function NewReview({ onAddReview }) {
             <form id="form" onSubmit={handleSubmit}>
                 <div>
                     <label>Movie Title:</label>
-                    <input type="text" name="title" value={newReviewObj.title} onChange={(e) => setReviewObj({title : e.target.value})}></input>
+                    <input type="text" name="title" value={newReviewObj.title} onChange={handleChange}></input>
                 </div>
                 <div>
                     <label>Movie Poster Link:</label>
-                    <input type="text" name="image" value={newReviewObj.image} onChange={(e) => setReviewObj({image : e.target.value})}></input>
+                    <input type="text" name="image" value={newReviewObj.image} onChange={handleChange}></input>
                 </div>
                 <div>
                     <label>Movie Synopsis:</label>
                     <br/>
-                    <textarea type="text" name="synopsis" value={newReviewObj.synopsis} onChange={(e) => setReviewObj({synopsis : e.target.value})}></textarea>
+                    <textarea type="text" name="synopsis" value={newReviewObj.synopsis} onChange={handleChange}></textarea>
                 </div>
                 <div>
                     <label>Your Review:</label>
                     <br></br>
-                    <textarea type="text" name="review" value={newReviewObj.review} onChange={(e) => setReviewObj({review : e.target.value})}></textarea>
+                    <textarea type="text" name="review" value={newReviewObj.review} onChange={handleChange}></textarea>
                 </div>
                 <div>
                     <label>Your Score:</label>
-                    <input type="text" name="score" value={newReviewObj.score} placeholder="1-5" onChange={(e) => setReviewObj({ score : e.target.value})}></input>
+                    <input type="text" name="score" value={newReviewObj.score} placeholder="1-5" onChange={handleChange}></input>
                 </div>
                 <button type="submit">Add Review</button>
             </form>

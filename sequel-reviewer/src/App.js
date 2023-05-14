@@ -30,7 +30,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route exact path="/reviews">
-          <ReviewsContainer reviews={reviews} onDeleteClick={handleDelete}/>
+          <ReviewsContainer reviews={reviews} onDeleteReview={handleDelete}/>
         </Route>
         <Route path="/reviews/new">
           <NewReview onAddReview={handleAddReview}/>
