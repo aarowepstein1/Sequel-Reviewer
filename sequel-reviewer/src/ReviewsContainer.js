@@ -10,7 +10,7 @@ function ReviewsContainer({reviews, onDeleteReview}) {
                 {reviews.map((review) => (<ReviewCard 
                 key={review.id}
                 reviewObj={review}
-                onDeleteClick={onDeleteReview}
+                onDeleteReview={onDeleteReview}
                 />
                 ))}
             </ul>

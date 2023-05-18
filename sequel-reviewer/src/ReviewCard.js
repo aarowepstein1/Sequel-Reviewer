@@ -14,7 +14,6 @@ function ReviewCard({reviewObj, onDeleteReview}) {
         })
         .then((r) => r.json())
         .then(() => onDeleteReview(review))
-
     }
 
     return(
