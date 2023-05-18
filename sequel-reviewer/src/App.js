@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import ReviewsContainer from './ReviewsContainer';
-import {Route, Switch, BrowserRouter} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Navbar from './Navbar';
 import Home from './Home';
 import NewReview from './NewReview';
@@ -21,8 +21,9 @@ function App() {
   }  
 
   function handleDelete(deletedReview) {
-    const updatedReviews = reviews.filter((movie) => movie.id !== deletedReview.id)
+    const updatedReviews = reviews.filter((review) => review.id !== deletedReview.id)
     setReviews(updatedReviews)
+    console.log(deletedReview)
   }
 
   return (

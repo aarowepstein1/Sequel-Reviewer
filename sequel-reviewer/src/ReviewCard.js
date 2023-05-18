@@ -8,12 +8,12 @@ function ReviewCard({reviewObj, onDeleteReview}) {
         toShowDetails(!showDetails)
     }
 
-    function handleDeleteReview() {
-        fetch(`http://localhost:4000/reviews/${id}`, {
-            method: "DELETE",
-        })
-        .then((r) => r.json())
-        .then(() => onDeleteReview(review))
+    function handleDeleteClick() {
+      fetch(`http://localhost:4000/reviews/${id}`, {
+        method: "DELETE",
+      })
+      .then((r) => r.json())
+      .then(() => onDeleteReview(reviewObj));
     }
 
     return(
@@ -26,7 +26,7 @@ function ReviewCard({reviewObj, onDeleteReview}) {
           {showDetails ? <div id="details">
             <p>{synopsis}</p>
             <p>{review}</p>
-            <button onClick={handleDeleteReview}>Delete Review</button>
+            <button onClick={handleDeleteClick}>Delete Review</button>
           </div> : null}
         </li>
     )

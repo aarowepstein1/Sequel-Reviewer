@@ -34,11 +34,11 @@ function NewReview({ onAddReview }) {
             //using callback function to lift the new review
             .then((newReview) => onAddReview(newReview));
             setReviewObj({
-                title: "", 
-                image:"", 
-                synopsis: "", 
-                review: "", 
-                score: ""
+                // title: "", 
+                // image:"", 
+                // synopsis: "", 
+                // review: "", 
+                // score: ""
             })
             history.push("/reviews")
     }
